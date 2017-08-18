@@ -25,7 +25,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 
 // Import your library
-import { SampleModule } from 'material-icon';
+import { MaterialDesignIconModule } from 'material-icon';
 
 @NgModule({
   declarations: [
@@ -35,7 +35,7 @@ import { SampleModule } from 'material-icon';
     BrowserModule,
 
     // Specify your library as an import
-    LibraryModule
+    MaterialDesignIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]
@@ -50,7 +50,7 @@ Once your library is imported, you can use its components, directives and pipes 
 <h1>
   {{title}}
 </h1>
-<sampleComponent></sampleComponent>
+<mdi [icon]="'copyright'" [size]="30"></mdi>
 ```
 
 ## Development
