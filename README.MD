@@ -1,5 +1,25 @@
 # material-icon
 
+
+
+## Pre requisite
+
+Need material design icons to install to make this package working
+
+```bash
+$ npm install material-design-icons --save
+```
+
+Add css file in to **.angular-cli.json** 
+
+```json
+"../node_modules/material-design-icons/iconfont/material-icons.css"
+```
+
+
+
+
+
 ## Installation
 
 To install this library, run:
@@ -8,15 +28,11 @@ To install this library, run:
 $ npm install material-icon --save
 ```
 
-## Consuming your library
 
-Once you have published your library to npm, you can import your library in any Angular application by running:
 
-```bash
-$ npm install material-icon
-```
 
-and then from your Angular `AppModule`:
+
+## Consuming
 
 ```typescript
 import { BrowserModule } from '@angular/platform-browser';
@@ -53,19 +69,9 @@ Once your library is imported, you can use its components, directives and pipes 
 <mdi [icon]="'copyright'" [size]="30"></mdi>
 ```
 
-## Development
 
-To generate all `*.js`, `*.d.ts` and `*.metadata.json` files:
 
-```bash
-$ npm run build
-```
 
-To lint all `*.ts` files:
-
-```bash
-$ npm run lint
-```
 
 ## License
 
